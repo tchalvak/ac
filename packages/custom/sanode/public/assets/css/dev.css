@@ -1,0 +1,52 @@
+/*=======================*/
+/*=======================*/
+/*=======================*/
+/*=======================*/
+/*=======================*/
+/*=======================*/
+/*=======================*/
+/*=======================*/
+/*=======================*/
+/*=======================*/
+/*=======================*/
+/*=======================*/
+/*breakpoint indication*/
+body:after {
+  content: "less than 640";
+  right: 0;
+  position: fixed;
+  bottom: 0;
+  font-size: 11px;
+  z-index: 1000;
+  color: black;
+}
+@media (max-width: 320px) {
+  body:after {
+    content: ">320 (iphone 5)";
+  }
+}
+@media (min-width: 640px) and (max-width: 767px) {
+  body:after {
+    content: ">640";
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  body:after {
+    content: ">768 (nexus 4)";
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  body:after {
+    content: ">992";
+  }
+}
+@media (min-width: 1200px) {
+  body:after {
+    content: ">1200";
+  }
+}
+@media (min-width: 1600px) {
+  body:after {
+    content: ">1600";
+  }
+}
